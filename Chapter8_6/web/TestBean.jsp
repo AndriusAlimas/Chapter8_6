@@ -25,7 +25,7 @@ than we set all properties if form name and bean name match -->
 		</tr>
 		<tr>
 			<td>Dog Name <b>without standart action[using scripting]: </b>:</td>
-			<td><%= ((example.PersonBean)request.getAttribute("person_object")).getDog().getDname() %></td>
+			<td><%= ((example.PersonBean)request.getAttribute("person_object")).getDog().getName() %></td>
 		</tr>
 		
 		
@@ -40,7 +40,7 @@ than we set all properties if form name and bean name match -->
 			<!-- If the expression has variable followed by a dot, the left-hand variable MUST be a Map or a bean
 			usually Map is implicit object. The thing to the right of the dot MUST be a Map key or a bean property.
 			So person_object is a bean -> dog is bean property -> name is dog bean property -->
-			<td>${person_object.dog.dName}</td>
+			<td>${person_object.dog.name}</td>
 		</tr>
 	</table>
 	

@@ -2,21 +2,21 @@ package example;
 
 public class Dog {
 	// Fields:
-	private String dName;
+	private String name;
 	// Constructors:
 	public Dog() {
-		this.dName = "unknown";
+		this.name = "unknown";
 	}
 
-	public Dog(String dName) {
-		this.dName = dName;
+	public Dog(String name) {
+		this.name = name;
 	}
 	// Setters:
-	public void setDname(String dName) {
-		this.dName = dName;
+	public void setDname(String name) {
+		this.name = name;
 	}
 	// Getters:
-	public String getDname() {
-		return this.dName;
+	public String getName() {
+		return this.name;
 	}
 }
