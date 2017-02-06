@@ -9,19 +9,19 @@
 <body>
 <!-- if bean is not existing we create a new one with scope of page
 than we set all properties if form name and bean name match -->
-	<jsp:useBean id='person' type='example.PersonBean'
+	<jsp:useBean id='person_object' type='example.PersonBean'
 		class='example.EmployeeBean'>
-		<jsp:setProperty name='person' property='*' />
+		<jsp:setProperty name='person_object' property='*' />
 	</jsp:useBean>
 	
 	<table border="3" >
 		<tr>
 			<td>First Name:</td>
-			<td><jsp:getProperty name='person' property='firstName' /></td>
+			<td><jsp:getProperty name='person_object' property='firstName' /></td>
 		</tr>
 		<tr>
 			<td>Last Name:</td>
-			<td><jsp:getProperty name='person' property='lastName' /></td>
+			<td><jsp:getProperty name='person_object' property='lastName' /></td>
 		</tr>
 		<tr>
 			<td>Dog Name <b>without standart action[using scripting]: </b>:</td>
@@ -31,7 +31,7 @@ than we set all properties if form name and bean name match -->
 		
 		<tr>
 			<td>Dog Name<b>with standart action[no scripting[</b>:</td>
-			<td><jsp:getProperty name='person' property='dog' /> </td>
+			<td><jsp:getProperty name='person_object' property='dog' /> </td>
 		</tr>
 		
 
