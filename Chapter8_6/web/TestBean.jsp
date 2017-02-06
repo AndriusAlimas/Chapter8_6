@@ -13,7 +13,7 @@ than we set all properties if form name and bean name match -->
 		class='example.EmployeeBean' scope="request">
 		<jsp:setProperty name='person_object' property='*' />
 	</jsp:useBean>
-	
+		<jsp:setProperty name='person_object' property="lastName" param="lastName" />
 	<table border="3" >
 		<tr>
 			<td>First Name:</td>
