@@ -12,4 +12,14 @@
   		<scripting-invalid>false</scripting-invalid>
   	</jsp-property-group>
   </jsp-config>
+  
+  <servlet>
+  	<servlet-name>PersonDog</servlet-name>
+  	<servlet-class>example.servlet.MyDogPutterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>PersonDog</servlet-name>
+  	<url-pattern>/dog.in</url-pattern>
+  </servlet-mapping>
 </web-app>
