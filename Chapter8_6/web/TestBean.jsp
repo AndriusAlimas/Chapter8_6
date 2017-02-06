@@ -40,7 +40,7 @@ than we set all properties if form name and bean name match -->
 			<!-- If the expression has variable followed by a dot, the left-hand variable MUST be a Map or a bean
 			usually Map is implicit object. The thing to the right of the dot MUST be a Map key or a bean property.
 			So person_object is a bean -> dog is bean property -> name is dog bean property -->
-			<td>${person_object.dog.name}</td>
+			<td>${person_object.dog.Dname}</td>
 		</tr>
 	</table>
 	
