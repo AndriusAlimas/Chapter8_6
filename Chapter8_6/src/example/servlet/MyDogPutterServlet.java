@@ -16,7 +16,7 @@ public class MyDogPutterServlet extends HttpServlet {
         // create another java object:
         Dog dog = new Dog();
         // set again like previously but this time you set for dog:
-        dog.setName(request.getParameter("dName"));
+        dog.setDname(request.getParameter("dName"));
         // and put this dog object into person, because person has a dog:
         employeeBean.setDog(dog);
         // using request object set attribute to request scope:
