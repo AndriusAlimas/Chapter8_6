@@ -28,13 +28,13 @@ than we set all properties if form name and bean name match -->
 			<td><%= ((example.PersonBean)request.getAttribute("person_object")).getDog().getName() %></td>
 		</tr>
 		
-<!--
+
 		<tr>
 			<td>Dog Name<b>with standart action[no scripting[</b>:</td>
-			<td><%-- <jsp:getProperty name='person_object' property='dog' /> --%></td>
+			<td><jsp:getProperty name='person_object' property='dog' /> </td>
 		</tr>
 		
--->
+
 		<tr>
 			<td>Dog Name <b>using EL : </b>:</td>
 			<!-- If the expression has variable followed by a dot, the left-hand variable MUST be a Map or a bean
