@@ -10,7 +10,7 @@
 <!-- if bean is not existing we create a new one with scope of page
 than we set all properties if form name and bean name match -->
 	<jsp:useBean id='person_object' type='example.PersonBean'
-		class='example.EmployeeBean'>
+		class='example.EmployeeBean' scope="request">
 		<jsp:setProperty name='person_object' property='*' />
 	</jsp:useBean>
 	
