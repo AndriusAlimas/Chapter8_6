@@ -28,10 +28,10 @@ than we set all properties if form name and bean name match -->
 			<td><%= ((example.PersonBean)request.getAttribute("person_object")).getDog().getName() %></td>
 		</tr>
 		
-
+		
 		<tr>
 			<td>Dog Name<b>with standart action[no scripting[</b>:</td>
-			<td><jsp:getProperty name='person_object' property='dog' /> </td>
+			<td><jsp:getProperty name='person' property='dog' /> </td>
 		</tr>
 		
 
