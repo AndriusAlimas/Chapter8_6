@@ -25,7 +25,7 @@ than we set all properties if form name and bean name match -->
 		</tr>
 		<tr>
 			<td>Dog Name <b>without standart action[using scripting]: </b>:</td>
-			<td><%= ((example.PersonBean)request.getAttribute("person_object")).getDog().getName() %></td>
+			<td><%= ((example.PersonBean)request.getAttribute("person_object")).getDog().getDname() %></td>
 		</tr>
 		
 		
